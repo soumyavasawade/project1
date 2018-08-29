@@ -1,0 +1,80 @@
+import java.io.*;
+
+import java.util.*;
+
+import java.util.Scanner;
+public class GFG
+{
+   
+ public static void main(String[] args)
+ 
+   {
+       
+ Scanner in=new Scanner(System.in);
+        
+String st=in.nextLine();
+        
+ String st1=in.nextLine();
+        
+  String st2=in.
+
+nextLine();
+       
+   int i;
+       
+   for(i=0;i<st.length();i++)
+       
+   {
+            
+  if(!(st.charAt(i)==' '&&st.charAt(i+1)==' '))
+ 
+             {
+          
+        st1+=st.charAt(i);
+       
+       }
+       
+   }
+          
+System.out.println("word to be deleted");
+        
+  String word=in.next();
+          
+ System.out.println("word position in sentence");
+    
+       int pos=in.nextInt();
+          
+ System.out.println("output:");
+          
+ int len=word.length();
+         
+  int count=0;
+          
+ for(i=0;i<st1.length() && count<pos-1;i++)
+ 
+          {
+             
+  st2+=st1.charAt(i);
+              
+ if(st1.charAt(i)==' ')
+    
+           {
+                 
+
+  count++;
+                   
+      
+         }
+          
+ }
+           
+i=i+len+1;
+       
+    String subst=st1.substring(i,st1.length());
+     
+      st2+=subst;
+       
+    System.out.println(st2);
+         
+  }
+}

@@ -1,0 +1,43 @@
+c class HelloWorld
+{
+
+    
+ public static void main(String []args)
+{
+    
+int a=121;
+
+    int i,r=0,p;
+   
+ int k=a;
+   
+ while(a!=0)
+   
+ {
+        
+p=a%10;
+      
+  r=r * 10 + p;
+     
+   a=a/10;
+    }
+    
+if(r == k)
+  
+  {
+        
+System.out.println("true");
+   
+ 
+    }
+  
+  else
+    
+{
+     
+System.out.println("false");
+     
+}
+}
+
+}

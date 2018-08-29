@@ -1,0 +1,113 @@
+import java.io.*;
+
+import java.util.*;
+
+import java.util.Scanner;
+public class GFG
+{
+   
+ public static void main(String[] args)
+   
+ {
+       
+
+ Scanner in=new Scanner(System.in);
+     
+   String ar[]=new String[10];
+  
+      String ar1[]=new String[10];
+   
+     String st="",rev="";
+        
+int i,k,j,b=0;
+
+        int pal[]=new int[10];
+  
+      System.out.println("Enter 10 elements");
+ 
+       for(i=0;i<10;i++)
+     
+   {
+            
+ar[i]=in.next();
+            
+    
+    }
+        System.out.println("Entered elements");
+  
+       for(i=0;i<10;i++)
+         
+{
+              System.out.println(ar[i]);
+         
+}
+          for(i=0;i<10;i++)
+      
+   
+ {
+              st=ar[i];
+      
+        rev="";
+            
+  for(k=st.length()-1;k>=0;k--)
+      
+        {
+                
+
+  rev=rev+st.charAt(k);
+           
+   }
+              
+if(rev.equals(st)==true)
+          
+    {
+                
+  ar1[b]=rev;
+            
+      pal[b++]=rev.length();
+         
+     }
+          }
+       
+   String temp;
+         
+ for(i=0;i<b;i++)
+          
+{
+               
+ for(j=0;j<b;j++)
+           
+     {
+               
+     if(pal[j]<pal[j+1])
+                  
+  {
+                       
+ temp=ar1[j];
+                      
+  ar1[j]=ar1[j+1];
+                    
+    ar1[j+1]=temp;
+                  
+      pal[i]=pal[j]+pal[j+1];
+          
+              pal[j+1]=pal[j]-pal[j+1];
+   
+                     pal[j]=pal[j]-pal[j+1];
+                  
+  }
+                }
+          }
+        
+   System.out.println();
+         
+   System.out.println("the palindrome num are: "+b);
+      
+      for(i=0;i<b;i++)
+            {
+             
+    System.out.println(ar1[i]+"\t\t\t"+pal[i]);
+       
+     }
+    }
+}

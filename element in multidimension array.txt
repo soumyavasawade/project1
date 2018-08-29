@@ -1,0 +1,33 @@
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+        int a[][]={{1,2,4,},{5,8,6},{45,123,14}};
+        int i,j;
+        int c=0;
+        int k=12;
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                if(a[i][j]==k)
+                {
+                   
+               c++;
+            }
+        }
+        }
+        if(c==1)
+        {
+             System.out.print("element is found");
+                }
+            else
+            {
+                 System.out.print("element is not found");
+                }
+        }
+        
+}

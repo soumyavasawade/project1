@@ -1,0 +1,51 @@
+public class HelloWorld{
+
+    
+  public static void main(String []args)
+{
+        
+String str = "aaabbbcccjhj";
+
+        char arr[]=str.toCharArray();
+  
+      int n = arr.length;
+   
+     String finalStr="";
+   
+     for(int i=0;i<n;i++)
+  
+      {
+          
+  if(i==n-1)
+     
+       {
+      
+          finalStr+=arr[i];
+         
+       break;
+           
+ }
+           
+
+ if(arr[i]==arr[i+1])
+           
+ {
+          
+      continue;
+       
+     }
+        
+    else
+    
+     
+   {
+                
+finalStr+=arr[i];
+  
+          }
+      
+  }
+    
+
+    System.out.println(finalStr);
+     }}

@@ -1,0 +1,17 @@
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+       double d=.35;
+        double bill=455.5;
+        double discount=0;
+        discount=bill*d;
+        double bill1;
+        bill1=bill-discount;
+        System.out.println(bill1);
+    }
+}

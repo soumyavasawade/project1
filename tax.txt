@@ -1,0 +1,34 @@
+
+import java.util.*;
+import java.lang.*;
+
+class Rextester
+{  
+    public static void main(String args[])
+    {
+        double  x=181002;
+        double k;
+        
+     if(x>=0 && x<=180000)
+     {
+         System.out.println("payable tax is Nil");
+    }
+        else if(x>=181001 && x<=300001)
+        {
+            k=x*.1;
+             System.out.println("payable tax is"+k);
+        }
+        else if(x>=300001 && x<=500000)
+        {
+            k=x*.2;
+             System.out.println("payable tax is"+k);
+        }
+        else if(x>=500001 && x<=1000000)
+        {
+            k=x*.3;
+             System.out.println("payable tax is "+k);
+        }
+        else
+             System.out.println("");
+    }
+}

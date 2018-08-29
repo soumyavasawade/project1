@@ -1,0 +1,34 @@
+public class HelloWorld{
+
+  
+    public static void main(String []args)
+{
+       
+ String a[]={"sou","geet","deepu","preeti","poonu","pooju"};
+ 
+       int i,count=0;
+   
+     String c="sou";
+     
+   for(i=0;i<a.length;i++)
+
+{
+   
+ if(c==a[i])
+  
+  {
+  
+      count++;
+
+     
+   
+    }
+   
+ 
+}
+
+System.out.print(count);
+   
+  }
+
+}
