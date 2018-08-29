@@ -11,7 +11,7 @@ public class GFG
    {
        
  Scanner in=new Scanner(System.in);
-        
+        fgf
 String st=in.nextLine();
         
  String st1=in.nextLine();
